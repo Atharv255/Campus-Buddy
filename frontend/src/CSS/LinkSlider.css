@@ -1,0 +1,58 @@
+.link-slider {
+  overflow: hidden;
+}
+
+.link-slider a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 30%;
+  position: relative;
+  white-space: nowrap;
+  animation: slide 16s linear infinite;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: #8b14f4;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.link-slider a:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.link-slider a:nth-child(2) {
+  animation-delay: 0s; /* Start all links at the same time */
+}
+
+.link-slider a:nth-child(3) {
+  animation-delay: 0s; /* Start all links at the same time */
+}
+
+.link-slider a:nth-child(4) {
+  animation-delay: 0s; /* Start all links at the same time */
+}
+
+/* Hide links on smaller screens */
+@media (max-width: 768px) {
+  .link-slider a {
+    display: none;
+  }
+}

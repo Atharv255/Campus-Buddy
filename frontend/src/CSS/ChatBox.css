@@ -1,0 +1,33 @@
+/* 
+.ChatBox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .ChatBox > .chakra-box {
+    overflow-y: auto;
+  }
+  
+  .ChatBox > .chakra-box:last-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .ChatBox > .chakra-box:last-child {
+      flex-direction: column;
+      padding: 5px 0;
+    }
+  
+    .ChatBox input {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    .ChatBox button {
+      width: 100%;
+    }
+  }
+   */
